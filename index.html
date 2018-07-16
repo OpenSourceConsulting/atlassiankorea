@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Atlassian in Seoul 2018</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scaleble=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/common.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/png" href="https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon.png" sizes="32x32" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<script>
+//디데이 종료 일자 설정
+var countDownDate = new Date("May 25, 2018 09:30:00").getTime();
+
+//1초마다 갱신되도록 함수 생성,실행
+var x = setInterval(function() {
+	// 오늘 날짜 등록
+	var now = new Date().getTime();
+
+	// 종료일자에서 현재일자를 뺀 시간
+	var distance = countDownDate - now;
+
+	// 각 변수에 일, 시, 분, 초를 등록
+	var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var s = Math.floor((distance % (1000 * 60)) / 1000);
+
+	//id가 d-day인 HTML코드에 내용 삽입
+	document.getElementById("time").innerHTML = "<li>" + d +"<span>days</span></li><li>" + h + "<span>hours</span></li><li>" + m + "<span>minutes</span></li><li>" + s + "<span>seconds</span></li>"; });
+</script>
+</head>
+
+<body>
+<!--whole-->
+<div id="whole">
+	<!-- header -->
+	<div id="header">
+		<div class="wrap">
+			<h1><a href="https://ko.atlassian.com/" target="_blank"><img src="images/logo.png" alt="atlassian"></a></h1>
+			<p><img src="images/visual_title.png" alt="atlassian in seoul"></p>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- counter -->
+	<div id="counter">
+		<span class="bg_deco"></span>
+		<div class="wrap poppins">
+			<ul class="title">
+				<li>Atlassian in Seoul 2018<span>25th May 2018</span></li>
+			</ul>
+			<ul id="time"></ul>
+		</div>
+	</div>
+	<!-- //counter -->
+	<a href="https://docs.google.com/forms/d/e/1FAIpQLSfSmKY039tN2FVrOwMr6F3M_oKsL6pCUIVp8SDcCbmqcRRghg/viewform" target="_blank" class="appNow">지금 바로 사전등록하세요. <i class="fas fa-arrow-right"></i></a>
+	<!-- about -->
+	<div id="about" class="pv">
+		<div class="wrap">
+			<img src="images/about_obj.png" alt="" class="bg_deco">
+			<div class="left">
+				<h3 class="main_title poppins">
+					About
+					<p class="eng">Atlassian in Seoul 2018</p>
+					<span></span>
+				</h3>
+				<ul>
+					<li class="t1">'Atlassian in Seoul 2018'이</li>
+					<li class="t2"><img src="images/about_text.png" alt="atlassian team tour"></li>
+					<li class="t3">를 품고 여러분을 찾아옵니다.</li>
+				</ul>
+			</div>
+			<div class="right">
+				<ul>
+					<li class="t1">'Atlassian Team Tour'는 전세계 11개 도시를 순방하며 진행되고 있는 Atlassian의 가장 큰 월드 투어입니다.</li>
+					<li class="t2">이번 'Atlassian in Seoul 2018'에서는 Team Tour 팀을 초청하여 그 내용을 공유해 드림과 동시에, 지금까지 여러해 행사를 진행하면서 여러분께 받아왔던 피드백에 따라 오시는 분의 역할, Atlassian 도구의 사용 경험 유무로 나누어 Team Practice, Team tools - basic, Team tools - advanced로 트랙을 세분화 했습니다.<br><br>
+
+					오는 5월 25일 (금), Atlassian과 전문 솔루션 파트너들이 준비한 Atlassian in Seoul에서 조직을  한단계 더 발전시킬 수 있는 유익한 아이디어를 얻으시길 바라며, 많은 참여와 성원 부탁드립니다.<br><br>
+
+					Atlassian 한국대표 류윤상  <span>Jason Ryu</span></li>
+					<li class="t3 poppins"><span>About Atlassian</span>
+					Atlassian unleashes the potential of every team. Our collaboration software helps teams organize, discuss and complete shared work. Teams use Atlassian’s project tracking, content creation and sharing, real-time communication and service management products to work better together and deliver quality results on time.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- feature -->
+	<div id="feature" class="pv">
+		<div class="wrap">
+			<ul>
+				<li class="feature_01">
+					<div>
+						<p class="icon"><i class="far fa-edit"></i></p>
+						<p class="name poppins">Team Practice<span></span></p>
+						<p class="summary">주로 IT 또는 Non-IT 기획자, 또는 조직의 일하는 문화 변화에 관심이 있는 분들을 위해</p>
+					</div>
+				</li>
+				<li class="feature_02">
+					<div>
+						<p class="icon"><i class="fas fa-wrench"></i></p>
+						<p class="name poppins">Team Tools<b>(Basic)</b><span></span></p>
+						<p class="summary">Atlassian 제품에 대한 기초적인 내용으로, Atlassian제품에 경험이 없는 분들을 위해</p>
+					</div>
+				</li>
+				<li class="feature_03">
+					<div>
+						<p class="icon"><i class="fas fa-cogs"></i></p>
+						<p class="name poppins">Team Tools<b>(Advanced)</b><span></span></p>
+						<p class="summary">Atlassian 제품을 현재 사용 중이나, 더 효과적으로 사용하기를 원하는 분들을 위해</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //feature -->
+	<!-- speaker -->
+	<div id="speaker" class="pv">
+		<h3 class="poppins">Keynote Speakers</h3>
+		<span class="bg_deco"></span>
+		<div class="wrap">
+			<ul>
+				<li>
+					<p class="img"><img src="images/speaker_01.png" alt="Scott Davis"</p>
+					<p class="text poppins"><span class="text_blue">Scott Davis</span>Solutions Engineer, APAC <br>Atlassian</p>
+				</li>
+				<li>
+					<p class="img"><img src="images/speaker_02.png" alt="Bernard Fergurson"</p>
+					<p class="text poppins"><span class="text_blue">Bernard Fergurson</span>R&D Team Coach <br>Atlassian</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //speaker -->
+	<!-- agenda -->
+	<div id="agenda" class="pv">
+		<div class="wrap">
+			<h3 class="main_title poppins">
+				Agenda
+				<p class="eng">Atlassian in Seoul 2018</p>
+				<span></span>
+			</h3>
+			<div class="overtable">
+				<table class="table col">
+					<tr>
+						<th></th>
+						<th>Team Practice<span>7층 그랜드홀</span></th>
+						<th>Team Tools - Basic<span>6층 그레이스홀 A</span></th>
+						<th>Team Tools - Advanced<span>6층 그레이스홀 B</span></th>
+					</tr>
+					<tr>
+						<td class="text_blue">9:30 ~ 10:20</td>
+						<td>Keynote: How Atlassians are Winning with the Team Playbook (and So Can You!) - Bernard Ferguson</td>
+						<td colspan="2">Keynote: Tools and Practices - Scott Davis</td>
+					</tr>
+					<tr>
+						<td class="text_blue">10:20 ~ 10:40</td>
+						<td>Open Q&A with Bernard Ferguson</td>
+						<td colspan="2">Open Q&A with Scott Davis</td>
+					</tr>
+					<tr>
+						<td class="text_blue">10:40 ~ 10:50</td>
+						<td colspan="3">Bio Break</td>
+					</tr>
+					<tr>
+						<td class="text_blue">10:50 ~ 11:40</td>
+						<td>Keynote: Tools and Practices - Scott Davis</td>
+						<td colspan="2">Keynote: How Atlassians are Winning with the Team Playbook (and So Can You!) - Bernard Ferguson</td>
+					</tr>
+					<tr>
+						<td class="text_blue">11:40 ~ 12:00</td>
+						<td>Open Q&A with Scott Davis</td>
+						<td colspan="2">Open Q&A with Bernard Ferguson</td>
+					</tr>
+					<tr>
+						<td class="text_blue">12:00 ~ 1:00</td>
+						<td colspan="3">Lunch & Networking</td>
+					</tr>
+					<tr class="bg">
+						<td class="text_blue">1:00 ~ 1:50</td>
+						<td>Breakout Session P-1: 당신의 팀은 노동환경 변화에 얼마나 효과적으로 대응하고 있습니까? - 오픈소스컨설팅</td>
+						<td>Breakout Session TB-1: Jira Service Desk 개요 - 한국정보컨설팅</td>
+						<td>Breakout Session TA-1: Jira Service Desk를 활용한 ITSM (IT Service Management) - 인프라웨어 테크놀러지</td>
+					</tr>
+					<tr class="bg">
+						<td class="text_blue">1:50 ~ 2:40</td>
+						<td>Breakout Session P-2: CMMI 기반 환경의 애자일 - 투씨드</td>
+						<td>Breakout Session TB-2: Confluence 는 어떻게 쓰나요? - 모우소프트</td>
+						<td>Breakout Session TA-2: Confluence 100배 활용하기 - 커브</td>
+					</tr>
+					<tr class="bg">
+						<td class="text_blue">2:40 ~ 3:10</td>
+						<td colspan="3">Coffee Break</td>
+					</tr>
+					<tr class="bg">
+						<td class="text_blue">3:10 ~ 4:00</td>
+						<td>Breakout Session P-3: The CALMS Framework for DevOps - 커브</td>
+						<td>Breakout Session TB-3: Jira Software를 활용하여 생산성을 높이기 - 모우소프트</td>
+						<td>Breakout Session TA-3: Atlassian 기능 확장과 구축 사례 (애드온 개발 등) - 한국정보컨설팅</td>
+					</tr>
+					<tr class="bg">
+						<td class="text_blue">4:00 ~ 4:50</td>
+						<td>Breakout Session P-4: 작은 규모를 위한 Scrum과 Enterprise를 위한 SAFe - 모우소프트</td>
+						<td>Breakout Session TB-4: Atlassian 제품 기반의 DevOps 구성 - 투씨드</td>
+						<td>Breakout Session TA-4: 200명 이하 개발조직의 DevOps 구현 사례 - 오픈소스컨설팅</td>
+					</tr>
+					<tr>
+						<td class="text_blue">4:50 ~ 5:00</td>
+						<td colspan="3">Bio Break and Fireside Q&A Prep</td>
+					</tr>
+					<tr>
+						<td class="text_blue">5:00 ~ 5:30</td>
+						<td>Fireside Q&A - Practices</td>
+						<td>Fireside Q&A - Team Tools - Basic</td>
+						<td>Fireside Q&A - Team Tools - Advanced</td>
+					</tr>
+				</table>
+			</div>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSfSmKY039tN2FVrOwMr6F3M_oKsL6pCUIVp8SDcCbmqcRRghg/viewform" target="_blank" class="reg"><i class="fas fa-file-alt"></i> 지금 사전등록</a>
+		</div>
+	</div>
+	<!-- //agenda -->
+	<!-- partner -->
+	<div id="partner" class="pv">
+		<img src="images/bottom_01.png" alt="" class="bg_deco left">
+		<img src="images/bottom_02.png" alt="" class="bg_deco right">
+		<div class="wrap">
+			<h3 class="main_title lefted poppins">
+				Solution Partners
+				<p class="kor">아틀라시안의 6개 공식 <br>파트너사가 함께 합니다.</p>
+				<span></span>
+			</h3>
+			<ul>
+				<li><a href="http://www.curvc.com/" target="_blank"><img src="images/partner_01.png" alt="curvc"></a></li>
+				<li><a href="http://www.infraware-global.com/" target="_blank"><img src="images/partner_02.png" alt="infraware"></a></li>
+				<li><a href="https://www.kicco.com/" target="_blank"><img src="images/partner_03.png" alt="한국정보컨설팅"></a></li>
+				<li><a href="http://www.mousoft.co.kr/" target="_blank"><img src="images/partner_04.png" alt="모우소프트"></a></li>
+				<li><a href="http://www.osci.kr/" target="_blank"><img src="images/partner_05.png" alt="open source consulting"></a></li>
+				<li><a href="http://twoseed.co.kr/" target="_blank"><img src="images/partner_06.png" alt="two seed"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //partner -->
+	<!-- information -->
+	<div id="information" class="pv">
+		<div class="wrap">
+			<h3 class="main_title lefted poppins">
+				Information
+				<span></span>
+			</h3>
+			<ul class="sumList">
+				<li class="item"><span>•</span>본 행사는 무료이며, 좌석이 한정되어 있으니 반드시 사전등록을 해주시기 바랍니다.</li>
+				<li class="item"><span>•</span>사전등록 후 행사 당일 주차권을 지참하신 100대에 한해 선착순으로 주차권 제공합니다.</li>
+				<li class="item"><span>•</span>행사 문의: 010-6698-6265 / <a href="mailto:atlassian@ableing.com" target="_blank">atlassian@ableing.com</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //information -->
+	<!-- footer -->
+	<div id="footer">Copyright © 2018 Atlassian. All rights reserved.</div>
+	<!-- //footer -->
+</div>
+<!--//whole-->
+</body>
+</html>
